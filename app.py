@@ -3,8 +3,10 @@ import pickle
 import streamlit as st
 from keras_preprocessing.image import load_img, img_to_array
 from PIL import Image
+from keras.models import load_model
 
-model = pickle.load(open('artifacts/model.pkl', 'rb'))
+model = load_model('model.h5')
+#model = pickle.load(open('artifacts/model.pkl', 'rb'))
 
 def ef(image):
     img = Image.open(image).convert('L')  # Convert image to grayscale
