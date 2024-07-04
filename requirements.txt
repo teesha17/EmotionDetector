@@ -4,3 +4,4 @@ pandas
 numpy
 tqdm
 ipykernel
+keras_preprocessing
