@@ -3,7 +3,6 @@ import pickle
 import streamlit as st
 from keras_preprocessing.image import load_img, img_to_array
 from PIL import Image
-import sys
 
 # Load the trained model
 model = pickle.load(open('artifacts/model.pkl', 'rb'))
@@ -40,5 +39,3 @@ if submit and uploaded_file is not None:
 else:
     if submit:
         st.write("Please upload an image file.")
-
-sys.stdout.flush()
