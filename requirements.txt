@@ -2,13 +2,5 @@ tensorflow
 keras
 pandas
 numpy
-jupyter
-notebook
 tqdm
-opencv-contrib-python
-
-images                      labels
-images/angry/teesh.png      angry
-images/angry/teesh1.png     angry
-
-load_img(img,gray_scale = True)
+ipykernel
