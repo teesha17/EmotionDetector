@@ -4,7 +4,6 @@ import streamlit as st
 from keras_preprocessing.image import load_img, img_to_array
 from PIL import Image
 
-# Load the trained model
 model = pickle.load(open('artifacts/model.pkl', 'rb'))
 
 def ef(image):
